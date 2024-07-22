@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Include base CSS (optional) -->
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Kurdish Glossary</title>
+</head>
+
+<body class="">
+    <nav class="navbar sticky-top container navbar-expand-lg ">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/img/logo2.png" alt="logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="project.html">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="informing.html">İnforming</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#create-area" aria-expanded="false" aria-controls="create-area">
+                            <i class="fa-solid fa-pen"></i>
+                        </button>
+
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn-svg" aria-pressed="false">
+                            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                class="size-6">
+                                <path
+                                    d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+                                <path fill-rule="evenodd"
+                                    d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="sr-only">Toggle Theme</span>
+                        </button>
+                    </li>
+                    <li class="nav-item dropdown user-menu-li">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="/assets/img/avatar.jpg" alt="avatar" class="avatar">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="sun" data-aos="zoom-in-down" data-aos-duration="2000"></div>
+        <div class="row">
+            <section class="d-flex align-items-center min-vh-100 position-relative other-hero" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <div class="text-center">
+                                <h1 class="display-3 fw-bold">For Quick Designing, there is Bootstrap</h1>
+                                <p class="lead py-3 py-md-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nam feugiat erat quis pulvinar consectetur adipiscing elit semper.</p><a
+                                    class="mx-auto   d-flex align-items-center justify-content-center rounded-circle"
+                                    href="" style="width: 60px;height: 60px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-down">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M12 5l0 14" />
+                                        <path d="M18 13l-6 6" />
+                                        <path d="M6 13l6 6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="col-md-12">
+                <div class="project">
+                    <div class="project-header d-flex justify-content-between  align-items-center mb-3">
+                        <h2 class="mb-3 ms-3">
+                            Kevok Language
+                        </h2>
+                        <div class="me-4 gap-3">
+                            <a class="btn btn-primary " href="kurdish.html">Join
+                                <i class="fa fa-arrow-right ms-2" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card card-body shadow-lg mb-2 " data-aos="fade-up" data-aos-duration="1500">
+                        <img src="https://images.unsplash.com/photo-1718062457138-2d6fcab216d9?q=80&w=1810&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="project" class="project-img">
+                    </div>
+                    <div class="ms-3" data-aos="fade-up" data-aos-duration="2000">
+                        <small>*<b>Kevok Ziman</b> - <span>Kurdish language education programme. This is where you
+                                should start first of all. This is your identity. Without it, you don't
+                                exist.</span></small>
+                    </div>
+                </div>
+                <div class="project">
+                   <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="mb-3 ms-3">
+                        Kevok Data
+                    </h2>
+                    <div class="me-4 gap-3">
+                        <a class="btn btn-primary " href="data.html">Join
+                            <i class="fa fa-arrow-right ms-2" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                   </div>
+                    <div class="card card-body shadow-lg mb-2 mt-2" data-aos="fade-up" data-aos-duration="1500">
+                        <img src="https://images.unsplash.com/photo-1719357101152-32d926e518d4?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="project" class="project-img">
+                    </div>
+                    <div class="ms-3" data-aos="fade-up" data-aos-duration="2000">
+                        <small>*<b>Kevok Ziman</b> - <span>This project is to accumulate enough data for artificial
+                                intelligence, which is the technology of the era. It has a simple timeline where you
+                                will be asked to enter Kurdish (Kurmanji - Sorani) - English texts. For another part of
+                                the work, data will be collected at the academic level. This database will be published
+                                publicly.</span></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" data-aos="fade-up" data-aos-duration="1500">
+        <div class="container">
+            <section class="pb-5 my-md-5">
+                <div class="row align-items-center text-center newsletter">
+                    <div class="col-12 col-lg-auto">
+                        <h2 class="display-5 fw-bold me-5 m-0 mb-4 mb-lg-0">Subscribe Today</h2>
+                    </div>
+                    <div class="col">
+                        <div class="mx-auto">
+                            <div class="input-group">
+                                <input class="form-control" placeholder="Email address" type="text">
+                                <button class="btn btn-primary rounded-0" type="button">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="row gap-1">
+                <div class="col-md-3 row d-flex align-items-start flex-column">
+                    <h4>Kevok Community</h4>
+                    <p>Made with Kevok Community</p>
+                    <div class="social ">
+                        <a href="https://codepen.io/Juxtopposed" target="_blank" class="link"><img
+                                src="https://assets.codepen.io/9051928/codepen_1.png" alt="" /></a>
+                        <a href="https://twitter.com/juxtopposed" target="_blank" class="link"><img
+                                src="https://assets.codepen.io/9051928/x.png" alt="" /></a>
+                        <a href="https://youtube.com/@juxtopposed" target="_blank" class="link"><img
+                                src="https://assets.codepen.io/9051928/youtube_1.png" alt="" /></a>
+                    </div>
+                    <p class="mt-auto">2024 © All Rights Reserved</p>
+                </div>
+                <div class="col-md-3  card card-body">
+                    <p>About</p>
+                    <p>Our mission</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms of service</p>
+                </div>
+                <div class="col-md-3  card card-body">
+                    <p>Services</p>
+                    <p>Products</p>
+                    <p>Join our team</p>
+                    <p>Partner with us</p>
+                </div>
+            </div>
+        </div>
+        <div class="backdrop"></div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $(document).ready(function() {
+
+            $('.counter').each(function() {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 4000,
+                    easing: 'swing',
+                    step: function(now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+
+        });
+    </script>
+    <script>
+        const counters = document.querySelectorAll(".counter");
+
+        counters.forEach((counter) => {
+            counter.innerText = "0";
+            const updateCounter = () => {
+                const target = +counter.getAttribute("data-target");
+                const count = +counter.innerText;
+                const increment = target / 200;
+                if (count < target) {
+                    counter.innerText = `${Math.ceil(count + increment)}`;
+                    setTimeout(updateCounter, 1);
+                } else counter.innerText = target;
+            };
+            updateCounter();
+        });
+    </script>
+</body>
+
+</html>

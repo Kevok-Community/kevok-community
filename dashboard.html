@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ico -->
+    <!-- Include base CSS (optional) -->
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="/assets/img/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Kurdish Glossary</title>
+</head>
+
+<body class="">
+    <nav class="navbar sticky-top border-0 container navbar-expand-lg ">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/img/logo2.png" alt="logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project.html">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="informing.html">İnforming</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#create-area" aria-expanded="false" aria-controls="create-area">
+                            <i class="fa-solid fa-pen"></i>
+                        </button>
+
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn-svg" aria-pressed="false">
+                            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                class="size-6">
+                                <path
+                                    d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+                                <path fill-rule="evenodd"
+                                    d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="sr-only">Toggle Theme</span>
+                        </button>
+                    </li>
+                    <li class="nav-item dropdown user-menu-li">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="/assets/img/avatar.jpg" alt="avatar" class="avatar">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="your-projects">
+            <div class="project-area">
+                <div class="row">
+                    <div class="col-md-12 project-board ">
+                        <ul class="nav nav-tabs clearfix" id="myTab" role="tablist">
+                            <li role="presentation" class=""><a class="" id="overview-tab"
+                                    data-bs-toggle="tab" data-bs-target="#overview-tab-pane" type="button"
+                                    role="tab" aria-controls="overview-tab-pane"
+                                    aria-selected="false">Overview</a>
+                            </li>
+                            <li role="presentation"><a class="active" id="flow-tab" data-bs-toggle="tab"
+                                    data-bs-target="#flow-tab-pane" type="button" role="tab"
+                                    aria-controls="flow-tab-pane" aria-selected="true">Flow</a>
+                            </li>
+                            <li role="presentation"><a class="" id="settings-tab" data-bs-toggle="tab"
+                                    data-bs-target="#settings-tab-pane" type="button" role="tab"
+                                    aria-controls="settings-tab-pane" aria-selected="false">Settings</a>
+                            </li>
+                            <li role="presentation"><a class="" id="activity-tab" data-bs-toggle="tab"
+                                data-bs-target="#activity-tab-pane" type="button" role="tab"
+                                aria-controls="activity-tab-pane" aria-selected="false">Activity</a>
+                        </li>
+                            <li class="pull-right ms-auto" role="presentation"><a href="#"><i
+                                        class="fa fa-plus"></i>Add section</a></li>
+                        </ul>
+                        <section class="content-section">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade " id="overview-tab-pane" role="tabpanel"
+                                    aria-labelledby="overview-tab" tabindex="0">
+                                    <div class="header-project">
+                                        <h3>Projects you participated in </h3>
+                                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#create-area" aria-expanded="false"
+                                            aria-controls="create-area">
+                                            <i class="fa-solid fa-plus me-2"></i>
+                                            Join a project
+                                        </button>
+                                    </div>
+                                    <div class="project-list">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="project sugar-bg-success">
+                                                    <div class="project-info">
+                                                        <h4>Kevok Community</h4>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                                                            modi
+                                                            odit dicta vel
+                                                            mollitia ea, quod ut eaque laboriosam! A nemo dolorum
+                                                            mollitia ea
+                                                            rem veniam eum,
+                                                            molestias minima doloribus?
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="project sugar-bg-success">
+                                                    <div class="project-info ">
+                                                        <h4>Kevok Community</h4>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                                                            modi
+                                                            odit dicta vel
+                                                            mollitia ea, quod ut eaque laboriosam! A nemo dolorum
+                                                            mollitia ea
+                                                            rem veniam eum,
+                                                            molestias minima doloribus?
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="project sugar-bg-success">
+                                                    <div class="project-info">
+                                                        <h4>Kevok Community</h4>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                                                            modi
+                                                            odit dicta vel
+                                                            mollitia ea, quod ut eaque laboriosam! A nemo dolorum
+                                                            mollitia ea
+                                                            rem veniam eum,
+                                                            molestias minima doloribus?
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="message-notif">
+                                                <div
+                                                    class="message-notif-body  d-flex justify-content-between align-content-center">
+                                                    <h3 class="mt-2">
+                                                        You have 3 messages
+                                                    </h3>
+                                                    <button class="btn btn-primary" type="button">
+                                                        View messages
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-notifications">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h3>Notifications</h3>
+                                                <div class="notification-group">
+                                                    <h5 class="d-flex align-items-center">Kevok Data
+                                                        <span class="badge ms-2">2</span>
+                                                        <button class="btn btn-primary btn-sm mb-2 ms-auto"
+                                                            type="button">
+                                                            <i class="fa fa-check" aria-hidden="true"></i>
+                                                        </button>
+                                                    </h5>
+                                                    <ul>
+                                                        <li>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Veniam
+                                                            sit odio possimus officia ullam adipisci aliquid! Aut, velit
+                                                            perferendis commodi nulla voluptatum incidunt harum quis,
+                                                            pariatur est fugit voluptates molestias?
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="notification-group">
+                                                    <h5 class="d-flex align-items-center">Kevok Data
+                                                        <span class="badge ms-2">2</span>
+                                                        <button class="btn btn-primary btn-sm mb-2 ms-auto"
+                                                            type="button">
+                                                            <i class="fa fa-check" aria-hidden="true"></i>
+                                                        </button>
+                                                    </h5>
+                                                    <ul>
+                                                        <li>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Veniam
+                                                            sit odio possimus officia ullam adipisci aliquid! Aut, velit
+                                                            perferendis commodi nulla voluptatum incidunt harum quis,
+                                                            pariatur est fugit voluptates molestias?
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade show active" id="flow-tab-pane" role="tabpanel"
+                                    aria-labelledby="flow-tab" tabindex="0">
+                                    <div class="header-project">
+                                        <h3>Message</h3>
+                                        <ul class="d-flex">
+                                            <li class="list-group-item me-2">
+                                                <div class="group-image">
+                                                    <img src="/assets/img/avatar.jpg" alt="avatar">
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="group-image">
+                                                    <img src="/assets/img/avatar.jpg" alt="avatar">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="group-message-details">
+                                        <div class="message">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 message-user">
+                                                    <img src="/assets/img/avatar.jpg" alt="avatar" class="avatar">
+                                                </div>
+                                                <div class="flex-grow-1 ms-3 message-body">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                    Necessitatibus, fuga est perspiciatis ea possimus aliquam ab ipsa
+                                                    magnam earum? Dolorem, fugiat rem quae omnis numquam commodi
+                                                    delectus ipsum quidem beatae.
+                                                    <div class="message-info">
+                                                        <span>25.05.2021 19:70</span>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="message">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 message-user">
+                                                    <img src="/assets/img/avatar.jpg" alt="avatar" class="avatar">
+                                                </div>
+                                                <div class="flex-grow-1 ms-3 message-body">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                    Necessitatibus, fuga est perspiciatis ea possimus aliquam ab ipsa
+                                                    magnam earum? Dolorem, fugiat rem quae omnis numquam commodi
+                                                    delectus ipsum quidem beatae.
+                                                    <div class="message-info">
+                                                        <span>25.05.2021 19:70</span>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="message">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 message-user">
+                                                    <img src="/assets/img/avatar.jpg" alt="avatar" class="avatar">
+                                                </div>
+                                                <div class="flex-grow-1 ms-3 message-body">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                    Necessitatibus, fuga est perspiciatis ea possimus aliquam ab ipsa
+                                                    magnam earum? Dolorem, fugiat rem quae omnis numquam commodi
+                                                    delectus ipsum quidem beatae.
+                                                    <div class="message-info">
+                                                        <span>25.05.2021 19:70</span>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="message">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 message-user">
+                                                    <img src="/assets/img/avatar.jpg" alt="avatar" class="avatar">
+                                                </div>
+                                                <div class="flex-grow-1 ms-3 message-body">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                    Necessitatibus, fuga est perspiciatis ea possimus aliquam ab ipsa
+                                                    magnam earum? Dolorem, fugiat rem quae omnis numquam commodi
+                                                    delectus ipsum quidem beatae.
+                                                    <div class="message-info">
+                                                        <span>25.05.2021 19:70</span>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="message">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 message-user">
+                                                    <img src="/assets/img/avatar.jpg" alt="avatar" class="avatar">
+                                                </div>
+                                                <div class="flex-grow-1 ms-3 message-body">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                    Necessitatibus, fuga est perspiciatis ea possimus aliquam ab ipsa
+                                                    magnam earum? Dolorem, fugiat rem quae omnis numquam commodi
+                                                    delectus ipsum quidem beatae.
+                                                    <div class="message-info">
+                                                        <span>25.05.2021 19:70</span>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade " id="settings-tab-pane" role="tabpanel"
+                                    aria-labelledby="settings-tab" tabindex="0">
+                                    <div class="header-project">
+                                        <h3>Settings</h3>
+                                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#create-area" aria-expanded="false"
+                                            aria-controls="create-area">
+                                            <i class="fa-solid fa-pen me-2"></i>
+                                            Edit
+                                        </button>
+                                    </div>
+                                    <div class="settings">
+                                        <ul>
+                                            <li>
+                                                <div class="type">
+                                                    General
+                                                </div>
+                                                <div class="forms">
+                                                    <div class="row">
+                                                        <div class="col-md-12 mb-3">
+                                                            <label for="project-name">Project Name</label>
+                                                            <input type="text" id="project-name"
+                                                                class="form-control" value="Kevok Community">
+                                                        </div>
+                                                        <div class="col-md-12 mb-3">
+                                                            <label for="project-name">Project Name</label>
+                                                            <input type="text" id="project-name"
+                                                                class="form-control" value="Kevok Community">
+                                                        </div>
+                                                        <div class="col-md-12 mb-3">
+                                                            <label for="project-name">Project Name</label>
+                                                            <input type="file" id="project-name"
+                                                                class="form-control" value="Kevok Community">
+                                                        </div>
+                                                        <div class="col-md-12 text-end">
+                                                            <button class="btn btn-primary"
+                                                                type="button">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="mt-4">
+                                                <div class="type">
+                                                    General
+                                                </div>
+                                                <div class="forms">
+                                                    <div class="row">
+                                                        <div class="col-md-12 mb-3">
+                                                            <label for="project-name">Project Name</label>
+                                                            <input type="text" id="project-name"
+                                                                class="form-control" value="Kevok Community">
+                                                        </div>
+                                                        <div class="col-md-12 mb-3">
+                                                            <label for="project-name">Project Name</label>
+                                                            <input type="text" id="project-name"
+                                                                class="form-control" value="Kevok Community">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <section class="pb-5 my-md-5">
+                <div class="row align-items-center text-center newsletter">
+                    <div class="col-12 col-lg-auto">
+                        <h2 class="display-5 fw-bold me-5 m-0 mb-4 mb-lg-0">Subscribe Today</h2>
+                    </div>
+                    <div class="col">
+                        <div class="mx-auto">
+                            <div class="input-group">
+                                <input class="form-control" placeholder="Email address" type="text">
+                                <button class="btn btn-primary rounded-0" type="button">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="row gap-1">
+                <div class="col-md-3 row d-flex align-items-start flex-column">
+                    <h4>Kevok Community</h4>
+                    <p>Made with Kevok Community</p>
+                    <div class="social ">
+                        <a href="https://codepen.io/Juxtopposed" target="_blank" class="link"><img
+                                src="https://assets.codepen.io/9051928/codepen_1.png" alt="" /></a>
+                        <a href="https://twitter.com/juxtopposed" target="_blank" class="link"><img
+                                src="https://assets.codepen.io/9051928/x.png" alt="" /></a>
+                        <a href="https://youtube.com/@juxtopposed" target="_blank" class="link"><img
+                                src="https://assets.codepen.io/9051928/youtube_1.png" alt="" /></a>
+                    </div>
+                    <p class="mt-auto">2024 © All Rights Reserved</p>
+                </div>
+                <div class="col-md-3  card card-body">
+                    <p>About</p>
+                    <p>Our mission</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms of service</p>
+                </div>
+                <div class="col-md-3  card card-body">
+                    <p>Services</p>
+                    <p>Products</p>
+                    <p>Join our team</p>
+                    <p>Partner with us</p>
+                </div>
+            </div>
+        </div>
+        <div class="backdrop"></div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const menuBtn = document.querySelector(".menu-btn");
+        backBtn = document.querySelector(".back-btn");
+        menu = document.querySelector("nav");
+
+        menuBtn.addEventListener("click", () => {
+            menu.style.transform = "translateX(0)";
+        })
+
+        backBtn.addEventListener("click", () => {
+            menu.style.transform = "translateX(-100%)";
+        })
+
+        /*window.addEventListener('resize', event => {
+            if(document.body.clientWidth >= 1000)
+                menu.style.transform = 'translateX(0)'
+            else
+                menu.style.transform = 'translateX(-100%)'
+        })*/
+    </script>
+</body>
+
+</html>

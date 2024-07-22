@@ -1,0 +1,487 @@
+:root {
+    --primary-color: #00629A;
+    --secondary-color: #6B8A7A;
+    --success-color: #28a745;
+    --info-color: #17a2b8;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --hover-color: #007bff;
+    --dark-theme: #131212;
+    --light-theme: #f0f0f0;
+    --dark-theme-card: #1c1c1c;
+    --light-theme-card: #e7e5e5;
+    --light-theme-text: #333;
+    --light-theme-text-hover: #000;
+    --light-theme-hover: #cccaca;
+    }
+
+
+.project-area{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+.course-video-list{
+    margin-top: 20px;
+}
+
+.course-video-list .video-header{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.course-video-list .video-header h3{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+body.dark-theme .course-video-list .video-header h3{
+    color: var(--primary-color);
+}
+
+.course-video-list .video-card{
+    background-color: var(--light-color);
+    border-radius: 5px;
+    min-height: 550px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.5s;
+    user-select: none;
+    transition: all 0.5s;
+}
+
+.course-video-list .video-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+}
+
+body.dark-theme .course-video-list .video-card{
+    background-color: var(--dark-theme);
+}
+
+.course-video-list .video-card .video-thumbnail{
+    position: relative;
+    overflow: hidden;
+}
+
+.course-video-list .video-card .video-thumbnail:last-child{
+    height: 525px;
+    background: url('https://images.unsplash.com/photo-1718062457138-2d6fcab216d9?q=80&w=1810&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    /* for image filter */
+
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+.course-video-list .video-card .video-thumbnail:last-child h1{
+    /* how many videos it consists of */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--light-color);
+    font-size: 100px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.course-video-list .video-card .video-thumbnail:last-child .video-footer button{
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    border: none;
+    color: var(--light-theme-text);
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body.dark-theme .course-video-list .video-card .video-thumbnail:last-child .video-footer button{
+    color: var(--light-color);
+    background-color: var(--dark-theme-card);
+    border: none;
+}
+
+.course-video-list .video-card .video-thumbnail:last-child .video-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+    height: 525px;
+}
+
+.course-video-list .video-card .video-thumbnail:last-child .video-footer button{
+    color: var(--light-color) !important;
+    cursor: pointer;
+    /* vertical center */
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: transparent !important;
+}
+
+.course-video-list .video-card .video-thumbnail:last-child .video-footer button i{
+    font-size: 30px;
+    color: var(--light-color) !important;
+}
+
+
+.course-video-list .video-card .video-thumbnail img{
+    width: 100%;
+    height: 240px;
+    transition: transform 0.5s;
+}
+
+
+
+.course-video-list .video-card .video-thumbnail img:hover{
+    transform: scale(1.1);
+}
+
+.course-video-list .video-card .video-thumbnail .video-duration{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    z-index: 2;
+}
+
+
+.course-video-list .video-card .video-thumbnail .video-duration span{
+    font-weight: bold;
+}
+
+.course-video-list .video-card .video-thumbnail .video-duration span i{
+    margin-right: 5px;
+}
+
+.course-video-list .video-card .video-thumbnail .video-progress{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+.course-video-list .video-card .video-thumbnail .video-progress .progress{
+    height: 5px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.course-video-list .video-card .video-thumbnail .video-progress .progress-bar{
+    background-color: var(--success-color);
+    border-radius: 5px;
+}
+
+.course-video-list .video-card .video-info{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.course-video-list .video-card .video-info h4{
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    color: var(--primary-color);
+}
+
+body.dark-theme .course-video-list .video-card .video-info h4{
+    color: var(--primary-color);
+}
+
+.course-video-list .video-card .video-info p{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: var(--light-theme-text);
+    margin-top: 10px;
+}
+
+body.dark-theme .course-video-list .video-card .video-info p{
+    color: var(--light-color);
+}
+
+
+.course-video-list .video-card .video-footer{
+    padding-top: 20px;
+}
+
+.course-video-list .video-card .video-footer .video-buttons{
+    /* divin en altına yapıştır */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card.card-body{
+    padding: 10px;
+}
+
+.course-video-list .video-card .video-footer .video-buttons button i{
+    font-size: 20px;
+    color: var(--primary-color);
+    cursor: pointer;
+    /* vertical center */
+    margin-bottom: 5px;
+}
+
+.course-video-list .video-card .video-footer .video-buttons button:last-child i{
+    color: var(--light-color);
+}
+
+
+.course-video-list .video-card .video-footer .video-buttons button{
+    background-color: var(--light-theme-card);
+    border: none;
+    color: var(--light-theme-text);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+body.dark-theme .course-video-list .video-card .video-footer .video-buttons button{
+    color: var(--light-color);
+    background-color: var(--dark-theme-card);
+}
+
+.course-video-list .video-card .video-footer .video-buttons button:last-child{
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--light-color);
+    padding: 8px 13px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body.dark-theme .course-video-list .video-card .video-footer .video-buttons button:last-child{
+    background-color: var(--primary-color);
+}
+
+.course-video-list .video-card .video-footer .video-buttons button:last-child:hover{
+    background-color: var(--hover-color);
+}
+
+body.dark-theme .course-video-list .video-card .video-footer .video-buttons button:last-child:hover{
+    background-color: var(--hover-color);
+}
+
+body.dark-theme .course-video-list .video-card .video-footer .video-buttons button{
+    color: var(--light-color);
+}
+
+
+.about-course-area{
+    height: 100vh   ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-course-area h2{
+    font-size: 40px;
+    color: var(--primary-color);
+}
+
+body.dark-theme .about-course-area h2{
+    color: var(--primary-color);
+}
+
+.about-course-area p{
+    font-size: 20px;
+    color: var(--light-theme-text);
+    margin-top: 20px;
+}
+
+body.dark-theme .about-course-area p{
+    color: var(--light-color);
+}
+
+.counter-area-header{
+    margin-bottom: 250px !important;
+    margin-top: 0 !important;
+}
+
+.project-faq-area{
+    margin-top: 250px;
+transition: all 0.5s;
+}
+
+.project-faq-area h2{
+    font-size: 40px;
+    color: var(--primary-color);
+}
+
+body.dark-theme .project-faq-area h2{
+    color: var(--primary-color);
+}
+
+.project-faq-area p{
+    font-size: 20px;
+    color: var(--light-theme-text);
+    margin-top: 20px;
+}
+
+body.dark-theme .project-faq-area p{
+    color: var(--light-color);
+}
+
+.project-faq-area .accordion{
+    margin-top: 20px;
+}
+
+.project-faq-area .accordion .accordion-item{
+    background-color: var(--light-theme-card);
+    color: var(--light-theme-text);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+    user-select: none;
+    transition: all 0.5s;
+}
+
+body.dark-theme .project-faq-area .accordion .accordion-item{
+    background-color: var(--dark-theme-card);
+    color: var(--light-color);
+}
+
+.project-faq-area .accordion .accordion-item:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+}
+
+.project-faq-area .accordion .accordion-item .accordion-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.project-faq-area .accordion .accordion-item h2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+body.dark-theme .project-faq-area .accordion .accordion-item h2{
+    color: var(--primary-color);
+}
+
+.project-faq-area .accordion .accordion-item  svg{
+    font-size: 20px;
+    color: var(--primary-color) !important;
+}
+
+body.dark-theme .project-faq-area .accordion .accordion-item svg{
+    color: var(--primary-color) !important;
+}
+
+.project-faq-area .accordion .accordion-item button{
+    background-color: var(--light-theme-card);
+    border: none;
+    color: var(--light-theme-text);
+    padding: 20px;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+body.dark-theme .project-faq-area .accordion .accordion-item button{
+    color: var(--light-color);
+    background-color: var(--dark-theme-card);
+    border: none;
+}
+
+.project-faq-area .accordion .accordion-item button:hover{
+    background-color: var(--light-color);
+}
+
+body.dark-theme .project-faq-area .accordion .accordion-item button:hover{
+    background-color: var(--dark-theme);
+}
+
+.project-faq-area .accordion .accordion-item button:focus{
+    box-shadow: none;
+}
+
+
+.project-faq-area .faq{
+    border-radius: 5px;
+    margin-bottom: 10px;
+    user-select: none;
+    transition: all 0.5s;
+    border: 1px solid transparent;
+}
+
+
+body.dark-theme .project-faq-area .faq{
+    border: 1px solid var(--dark-theme);
+}
+
+
+.project-faq-area .faq:hover{
+border-bottom: 10px solid black;
+border-left: 10px solid black;
+border-top: 4px solid black;
+border-right: 2px solid black;
+transition: all 0.5s;
+}
+
+body.dark-theme .project-faq-area .faq:hover{
+    border-bottom: 10px solid black;
+    border-left: 10px solid black;
+    border-top: 4px solid black;
+    border-right: 2px solid black;
+    transition: all 0.5s;
+}
+
+
+.project-call-area svg{
+    font-size: 40px;
+    color: var(--primary-color);
+}
+
+body.dark-theme .project-call-area svg{
+    color: var(--primary-color);
+}
+
+.project-call-area h2{
+    font-size: 40px;
+    color: var(--primary-color);
+}
+
+body.dark-theme .project-call-area h2{
+    color: var(--primary-color);
+}
+
+.project-call-area p{
+    font-size: 20px;
+    color: var(--light-theme-text);
+    margin-top: 20px;
+}
+
+body.dark-theme .project-call-area p{
+    color: var(--light-color);
+}
+
+

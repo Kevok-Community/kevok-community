@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css?family=IBM%20Plex%20Sans:500|IBM%20Plex%20Sans:300");:root {
+	--m: 4rem;
+}
+
+* {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+
+:root {
+	--primary-color: #00629A;
+	--secondary-color: #030303;
+	--success-color: #28a745;
+	--info-color: #17a2b8;
+	--warning-color: #ffc107;
+	--danger-color: #dc3545;
+	--light-color: #f8f9fa;
+	--dark-color: #343a40;
+	--hover-color: #007bff;
+	--dark-theme: #131212;
+	--light-theme: #f0f0f0;
+	--dark-theme-card: #1c1c1c;
+	--light-theme-card: #e7e5e5;
+	--light-theme-text: #333;
+	--light-theme-text-hover: #000;
+	--light-theme-hover: #cccaca;
+	--dark-theme-hover: #333;
+	--card-sugar-primary: #a0c7eb;
+	--card-sugar-secondary: #acb1b6;
+	--card-sugar-success: #b7ebb7;
+	--card-sugar-info: #97c8f7;
+	--card-sugar-warning: #d7f590;
+
+}
+
+
+.auth-area {
+	height: 100vh;
+	padding-left: 5rem;
+	padding-right: 5rem;
+	padding-top: 7rem;
+	position: relative;
+}
+
+.auth-area .auth-header {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.auth-area .auth-header h2 {
+	font-size: 2.5rem;
+	color: var(--primary-color);
+}
+
+.auth-area .auth-header p {
+	font-size: 1.2rem;
+	color: var(--light-theme-text);
+}
+
+.auth-area .auth-header p a {
+	color: var(--light-theme-text);
+	text-decoration: none;
+}
+
+body.dark-theme .auth-area .auth-header p a {
+	color: var(--light-color);
+}
+
+.auth-area .auth-header p a:hover {
+	color: var(--hover-color) !important;
+}
+
+body.dark-theme .auth-area .auth-header p{
+	color: var(--light-color);
+}
+
+.auth-area .auth-form {
+	background: var(--card-sugar-info);
+	padding: 2rem;
+	border-radius: 5px;
+	color: var(--light-theme-text);
+	border-radius: 0;
+}
+
+.auth-area .auth-form .form-group {
+	margin-bottom: 1.5rem;
+}
+
+.auth-area .auth-form .form-group label {
+	font-size: 1rem;
+	color: var(--light-theme-text);
+}
+
+.auth-area .auth-form .form-group .form-control {
+	width: 100%;
+	border: none;
+	border-radius: 5px;
+	background: var(--light-theme);
+	color: var(--light-theme-text);
+	padding: 0.5rem 1rem;
+	transition: all 0.3s;
+	border: 1px solid var(--light-theme);
+	font-size: 1rem;
+}
+
+.auth-area .auth-form .form-group .form-control:focus {
+	box-shadow: none;
+	border: 1px solid var(--dark-color);
+}
+
+
+
+.auth-area .auth-form .form-group .form-control::placeholder {
+	color: var(--light-theme-text);
+}
+
+.auth-area .auth-form button {
+	width: 100%;
+	border: 1px solid var(--light-theme-text);
+	border-radius: 5px;
+	background: var(--light-color);
+	color: var(--light-theme-text);
+	padding: 0.5rem 1rem;
+	transition: all 0.3s;
+	font-size: 1rem;
+}
+
+
+.auth-area .auth-form button:hover {
+	background: var(--hover-color);
+	color: var(--light-theme-text-hover);
+	border: 1px solid var(--hover-color);
+}
+
+.auth-area .auth-form .auth-link {
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.auth-area .auth-form .auth-link a {
+	color: var(--light-theme-text);
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+
+.auth-area .auth-form .auth-link a:hover {
+	color: var(--primary-color);
+}
+
+
+
+
+.auth-area .auth-footer{
+
+	margin-top: 1rem;
+}
+.auth-area .auth-footer p {
+	font-size: 0.9rem;
+	color: var(--light-theme-text);
+	text-align: center;
+}
+
+body.dark-theme .auth-area .auth-footer p{
+	color: var(--light-color);
+}
+
+.auth-area .auth-footer .social-buttons{
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+	gap: 1rem;
+}
+
+.auth-area .auth-footer .social-buttons a{
+	color: var(--light-theme-text);
+	text-decoration: none;
+	font-size: 1.5rem;
+	background-color: var(--light-theme);
+}
+
+.auth-area .auth-footer .social-buttons a:hover{
+	color: var(--light-theme-text-hover);
+	background-color: var(--hover-color);
+}
+
+body.dark-theme .auth-area .auth-footer .social-buttons a{
+	color: var(--light-color);
+	background-color: var(--dark-theme-card);
+}
+
+body.dark-theme .auth-area .auth-footer .social-buttons a:hover{
+	color: var(--light-theme-text-hover);
+	background-color: var(--dark-theme-hover);
+}
+.auth-area svg path{
+	fill: var(--card-sugar-info);
+}
+
+body.dark-theme .auth-area svg path{
+	fill: var(--dark-theme-card);
+}
+
+@media screen and (max-width: 768px) {
+	.auth-area {
+		padding-left: 2rem;
+		padding-right: 2rem;
+		padding-top: 5rem;
+	}
+
+	.auth-area svg{
+		display: none;
+	}
+}
+
+
+

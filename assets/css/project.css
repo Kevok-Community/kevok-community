@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #00629A;
+    --secondary-color: #030303;
+    --success-color: #28a745;
+    --info-color: #17a2b8;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --hover-color: #007bff;
+    --dark-theme: #131212;
+    --light-theme: #f0f0f0;
+    --dark-theme-card: #1c1c1c;
+    --light-theme-card: #e7e5e5;
+    --light-theme-text: #333;
+    --light-theme-text-hover: #000;
+    --light-theme-hover: #cccaca;
+    --dark-theme-hover: #333;
+    }
+
+
+.other-hero{
+height: 100vh !important;
+}
+
+.other-hero h1{
+font-size: 3rem;
+color: var(--primary-color);
+}
+
+.other-hero p{
+font-size: 1.2rem;
+color: var(--light-theme-text);
+}
+
+body.dark-theme .other-hero p {
+color: var(--light-color);
+}
+
+
+
+.other-hero a{
+background-color: var(--primary-color);
+color: var(--light-color);
+border: none;
+}
+
+body.dark-theme .other-hero a {
+background-color: var(--primary-color);
+color: var(--light-color);
+}
+
+.other-hero a:hover{
+background-color: var(--hover-color) !important;
+color: var(--light-color) !important;
+}
+
+
+.sun {
+position: absolute;
+width: 200px;
+height: 200px;
+/* margin: 30px auto; */
+/* en sağa al */
+right: 400px;
+top: 0;
+bottom: 420px;
+margin: auto;
+z-index: -1;
+border-radius: 50%;
+background: linear-gradient(0deg, #E99046 12%, #FFD700 100%);
+}
+
+.sun::after {
+    position: absolute;
+    left: -100px;
+    bottom: -50px;
+    display: block;
+    content: '';
+    width: 380px;
+    height: 200px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 70%, rgba(255, 255, 255, 0.2) 100%);
+    backdrop-filter: blur(20px);
+
+    backdrop-filter: blur(20px);
+    /* border-radius: 50%; */
+    transform: rotate(15deg);
+    transform-origin: center center;
+    clip-path: polygon(-50% 109%, 33% 50%, 43% 80%, 60% 40%, 79% 61%, 95% 100%, 100% 100%);
+}
+
+
+body.dark-theme .sun::after{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.2) 50%);
+    backdrop-filter: blur(20px);
+}
+
+.project{
+    margin-bottom: 100px;
+}
+
+.project h2{
+    color: var(--primary-color);
+}
+
+
+.project img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project small{
+    color: var(--light-theme-text);
+}
+
+body.dark-theme .project small{
+    color: var(--light-color);
+}

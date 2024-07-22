@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/data.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Include base CSS (optional) -->
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Kurdish Glossary</title>
+</head>
+
+<body class="">
+    <nav class="navbar sticky-top container navbar-expand-lg ">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/img/logo2.png" alt="logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="project.html">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="informing.html">İnforming</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#create-area" aria-expanded="false" aria-controls="create-area">
+                            <i class="fa-solid fa-pen"></i>
+                        </button>
+
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn-svg" aria-pressed="false">
+                            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                class="size-6">
+                                <path
+                                    d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+                                <path fill-rule="evenodd"
+                                    d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="sr-only">Toggle Theme</span>
+                        </button>
+                    </li>
+                    <li class="nav-item dropdown user-menu-li">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="/assets/img/avatar.jpg" alt="avatar" class="avatar">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="about-course-area" data-aos="fade-up" data-aos-duration="1500">
+            <div class="col-md-5">
+                <p class="">Our Story</p>
+                <h2 class="display-5 fw-bold">About Us</h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p><a class="btn btn-primary mt-2" href="">Learn more</a>
+            </div>
+            <div class="col-md-6 offset-md-1">
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod.</p>
+                <p class="lead">Ullamco laboris nisi ut a Lorem ipsum dolor sit amet,consectetur adipiscing eli
+                    ncididunt ullamco laboris nisi ut a Lorem ipsum dolor sit amet,consectetur adipiscing el Lorem
+                    ipsum dolor sit amet,consectetur adipiscing eli ncididunt ullamco laboris nisi ut a Lorem ipsum
+                    dolor sit amet,consectetur adipiscing el.</p>
+            </div>
+        </div>
+        <div class="counter-area-header p-1" data-aos="fade-up" data-aos-duration="2000">
+            <h2>Our Community</h2>
+            <p>Our community is growing day by day. We are proud of our community.</p>
+            <div class="counter-area card card-body">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-md-4">
+                        <div class="counter-container">
+                            <i class="fab fa-instagram fa-3x"></i>
+                            <div class="counter" data-target="12000"></div>
+                            <span>Instagram Followers</span>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="counter-container">
+                            <i class="fab fa-youtube fa-3x"></i>
+                            <div class="counter" data-target="5000"></div>
+                            <span>YouTube Subscribers</span>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="counter-container">
+                            <i class="fab fa-facebook fa-3x"></i>
+                            <div class="counter" data-target="7500"></div>
+                            <span>Facebook Fans</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="how-it-works ">
+            <div class="col-12 col-lg-10 col-xl-8 mx-auto text-center how-it-works-header">
+                <h2>How It Works</h2>
+                <p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+                    tristique nec sapien vel bibendum. Phasellus sagittis nisl vitae auctor sodales.</p>
+            </div>
+            <div class="row justify-content-center how-it-works-content">
+                <div class="col-lg-9">
+                    <div class="row">
+                        <!-- Step -->
+                        <div class="col-lg-4">
+                            <div class="text-center position-relative ">
+                                <!-- Step Icon -->
+                                <div class="step-icon mx-auto   rounded-circle d-flex align-items-center justify-content-center"
+                                    style="width:150px;height:150px">
+                                    <svg class="bi bi-fingerprint  fs-1" height="40" viewbox="0 0 16 16"
+                                        width="40" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.06 6.5a.5.5 0 0 1 .5.5v.776a11.5 11.5 0 0 1-.552 3.519l-1.331 4.14a.5.5 0 0 1-.952-.305l1.33-4.141a10.5 10.5 0 0 0 .504-3.213V7a.5.5 0 0 1 .5-.5Z">
+                                        </path>
+                                        <path
+                                            d="M6.06 7a2 2 0 1 1 4 0 .5.5 0 1 1-1 0 1 1 0 1 0-2 0v.332c0 .409-.022.816-.066 1.221A.5.5 0 0 1 6 8.447c.04-.37.06-.742.06-1.115V7Zm3.509 1a.5.5 0 0 1 .487.513 11.5 11.5 0 0 1-.587 3.339l-1.266 3.8a.5.5 0 0 1-.949-.317l1.267-3.8a10.5 10.5 0 0 0 .535-3.048A.5.5 0 0 1 9.569 8Zm-3.356 2.115a.5.5 0 0 1 .33.626L5.24 14.939a.5.5 0 1 1-.955-.296l1.303-4.199a.5.5 0 0 1 .625-.329Z">
+                                        </path>
+                                        <path
+                                            d="M4.759 5.833A3.501 3.501 0 0 1 11.559 7a.5.5 0 0 1-1 0 2.5 2.5 0 0 0-4.857-.833.5.5 0 1 1-.943-.334Zm.3 1.67a.5.5 0 0 1 .449.546 10.72 10.72 0 0 1-.4 2.031l-1.222 4.072a.5.5 0 1 1-.958-.287L4.15 9.793a9.72 9.72 0 0 0 .363-1.842.5.5 0 0 1 .546-.449Zm6 .647a.5.5 0 0 1 .5.5c0 1.28-.213 2.552-.632 3.762l-1.09 3.145a.5.5 0 0 1-.944-.327l1.089-3.145c.382-1.105.578-2.266.578-3.435a.5.5 0 0 1 .5-.5Z">
+                                        </path>
+                                        <path
+                                            d="M3.902 4.222a4.996 4.996 0 0 1 5.202-2.113.5.5 0 0 1-.208.979 3.996 3.996 0 0 0-4.163 1.69.5.5 0 0 1-.831-.556Zm6.72-.955a.5.5 0 0 1 .705-.052A4.99 4.99 0 0 1 13.059 7v1.5a.5.5 0 1 1-1 0V7a3.99 3.99 0 0 0-1.386-3.028.5.5 0 0 1-.051-.705ZM3.68 5.842a.5.5 0 0 1 .422.568c-.029.192-.044.39-.044.59 0 .71-.1 1.417-.298 2.1l-1.14 3.923a.5.5 0 1 1-.96-.279L2.8 8.821A6.531 6.531 0 0 0 3.058 7c0-.25.019-.496.054-.736a.5.5 0 0 1 .568-.422Zm8.882 3.66a.5.5 0 0 1 .456.54c-.084 1-.298 1.986-.64 2.934l-.744 2.068a.5.5 0 0 1-.941-.338l.745-2.07a10.51 10.51 0 0 0 .584-2.678.5.5 0 0 1 .54-.456Z">
+                                        </path>
+                                        <path
+                                            d="M4.81 1.37A6.5 6.5 0 0 1 14.56 7a.5.5 0 1 1-1 0 5.5 5.5 0 0 0-8.25-4.765.5.5 0 0 1-.5-.865Zm-.89 1.257a.5.5 0 0 1 .04.706A5.478 5.478 0 0 0 2.56 7a.5.5 0 0 1-1 0c0-1.664.626-3.184 1.655-4.333a.5.5 0 0 1 .706-.04ZM1.915 8.02a.5.5 0 0 1 .346.616l-.779 2.767a.5.5 0 1 1-.962-.27l.778-2.767a.5.5 0 0 1 .617-.346Zm12.15.481a.5.5 0 0 1 .49.51c-.03 1.499-.161 3.025-.727 4.533l-.07.187a.5.5 0 0 1-.936-.351l.07-.187c.506-1.35.634-2.74.663-4.202a.5.5 0 0 1 .51-.49Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h4 class="mt-3 fs-5">Step 1</h4>
+                                <p class=" mt-4 fs-6 px-lg-3 mb-5 mb-lg-0">Lorem ipsum dolor sit amet
+                                    consectetur Lorem.</p><!-- Arrow Icon -->
+                                <div class="arrow-icon position-absolute d-none d-lg-block"
+                                    style="top:50px; right:-25px">
+                                    <svg class="bi bi-arrow-right" height="30" viewbox="0 0 16 16" width="30"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                                            fill-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div><!-- Step -->
+                        <div class="col-lg-4">
+                            <div class="text-center position-relative">
+                                <!-- Step Icon -->
+                                <div class="step-icon mx-auto   rounded-circle d-flex align-items-center justify-content-center"
+                                    style="width: 150px;height: 150px;">
+                                    <svg class="bi bi-lightbulb text-secondary" height="40" viewbox="0 0 16 16"
+                                        width="40" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h4 class="mt-3 fs-5">Step 2</h4>
+                                <p class=" mt-4 fs-6 px-lg-3 mb-5 mb-lg-0">Lorem ipsum dolor sit amet
+                                    consectetur Lorem.</p><!-- Arrow Icon -->
+                                <div class="arrow-icon d-none d-lg-block position-absolute"
+                                    style="top:50px; right:-25px">
+                                    <svg class="bi bi-arrow-right" height="30" viewbox="0 0 16 16" width="30"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                                            fill-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div><!-- Step -->
+                        <div class="col-lg-4">
+                            <div class="text-center position-relative">
+                                <!--- Step Icon -->
+                                <div class="step-icon mx-auto   rounded-circle d-flex align-items-center justify-content-center"
+                                    style="width: 150px;height: 150px;">
+                                    <svg class="bi bi-mic text-secondary" height="40" viewbox="0 0 16 16"
+                                        width="40" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z">
+                                        </path>
+                                        <path
+                                            d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0v5zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h4 class="mt-3 fs-5">Step 3</h4>
+                                <p class=" mt-4 fs-6 px-lg-3 mb-5 mb-lg-0">Lorem ipsum dolor sit amet
+                                    consectetur Lorem.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-area " data-aos="fade-up" data-aos-duration="2000">
+            <div class="row">
+                <h2>find. think. present. start!</h2>
+                <p>Here you can get an idea of what's going on behind <b>Kevok Community</b>....</p>
+                <div class="col-md-12 project-board ">
+                    <ul class="nav nav-tabs clearfix">
+                        <li role="presentation" class=""><a class="" href="project.html">
+                                <i class="fa fa-arrow-left ms-1" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li role="presentation"><a class="active" href="#">Kurdish Data</a></li>
+                    </ul>
+                    <div class="data-list p-2 mb-5">
+                        <div class="data-header d-flex justify-content-between align-items-center">
+                            <h3>Kurdish Data</h3>
+                            <button class="btn btn-primary">
+                                <i class="fa fa-plus me-2"></i> Add Data
+                            </button>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="data card card-body">
+                                    <div class="data-icon">
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="data-body">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cumque,
+                                            assumenda aspernatur quos quam, libero ipsam nihil aliquam quasi quas odit
+                                            veniam enim sequi placeat voluptate harum hic beatae! Libero.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="data card card-body">
+                                    <div class="data-icon">
+                                        <i class="fa fa-file-text"></i>
+                                    </div>
+                                    <div class="data-body">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cumque,
+                                            assumenda aspernatur quos quam, libero ipsam nihil aliquam quasi quas odit
+                                            veniam enim sequi placeat voluptate harum hic beatae! Libero.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="data card card-body">
+                                    <div class="data-icon">
+                                        <i class="fa fa-comment-dots" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="data-body">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cumque,
+                                            assumenda aspernatur quos quam, libero ipsam nihil aliquam quasi quas odit
+                                            veniam enim sequi placeat voluptate harum hic beatae! Libero.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="last-activity">
+            <div class="last-activity-header text-center">
+                <h2>Last Activity</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.
+                </p>
+            </div>
+            <div class="last-activity-table card card-body">
+                <div class="search-area card card-body mx-auto">
+                    <div class="search-box d-flex">
+                        <input type="text" class="search-input" placeholder="Search for a word">
+                        <button class="search-btn">
+                            <i class="fa-solid fa-search"></i>
+                        </button>
+                        <button class="filter-btn ">
+                            <i class="fa fa-filter" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                <h1>Sites</h1>
+                            </th>
+                            <th>
+                                <h1>Views</h1>
+                            </th>
+                            <th>
+                                <h1>Clicks</h1>
+                            </th>
+                            <th>
+                                <h1>Average</h1>
+                            </th>
+                            <th>
+                                <h1>Go</h1>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Google</td>
+                            <td>9518</td>
+                            <td>6369</td>
+                            <td>01:32:50</td>
+                            <td>
+                                <a href="">PDF <i class="fa fa-link"></i> </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Twitter</td>
+                            <td>7326</td>
+                            <td>10437</td>
+                            <td>00:51:22</td>
+                            <td>
+                                <a href="">PDF <i class="fa fa-link"></i> </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Amazon</td>
+                            <td>4162</td>
+                            <td>5327</td>
+                            <td>00:24:34</td>
+                            <td>
+                                <a href="">PDF <i class="fa fa-link"></i> </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LinkedIn</td>
+                            <td>3654</td>
+                            <td>2961</td>
+                            <td>00:12:10</td>
+                            <td>
+                                <a href="">PDF <i class="fa fa-link"></i> </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>CodePen</td>
+                            <td>2002</td>
+                            <td>4135</td>
+                            <td>00:46:19</td>
+                            <td>
+                                <a href="">PDF <i class="fa fa-link"></i> </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>GitHub</td>
+                            <td>4623</td>
+                            <td>3486</td>
+                            <td>00:31:52</td>
+                            <td>
+                                <a href="">PDF <i class="fa fa-link"></i> </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="informing-contact ">
+            <div class="contact-header text-center">
+                <h2>Contact</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.
+                </p>
+            </div>
+            <div class="contact-form card card-body">
+                <form action="">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="form-group mb-4">
+                                <label for="name">Document Name</label>
+                                <input type="text" class="form-control" id="name"
+                                    placeholder="Document name">
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="name">Document Language</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Choose...</option>
+                                    <option value="1">Kurdish</option>
+                                    <option value="2">Kurdish - English</option>
+                                    <option value="2">Kurdish - Turkish</option>
+                                    <option value="2">Kurdish - Arabic</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="name">Document Link</label>
+                                <input type="text" class="form-control" id="name"
+                                    placeholder="Document link">
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="source-link">Document Source Link</label>
+                                <input type="text" class="form-control" id="source-link"
+                                    placeholder="Document source">
+                                <p id="source-link" class="ms-2 text-center">In order for us to make
+                                    licence checks, please write where you got the document from and if there is
+                                    a link, please leave a link. If there is no source or you cannot find it,
+                                    you can leave it blank.</p>
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="message">Document Description</label>
+                                <textarea class="form-control" id="message" rows="3" placeholder="Document description"></textarea>
+                            </div>
+                            <div class="form-footer">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="project-faq-area">
+            <div class="row justify-content-center text-center mb-3">
+                <div class="col-lg-8 col-xl-7">
+                    <p class="m-0">F.A.Q</p>
+                    <h2 class="display-5 fw-bold">Frequently Asked Questions</h2>
+                    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit Consequatur quidem eius
+                        cum voluptatum quasi delectus.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center pt-lg-3 faq">
+                <div class="col-md-3">
+                    <h2 class="mt-3 fw-bold">Technical</h2>
+                </div>
+                <div class="col-md-9">
+                    <div class="accordion" id="Technical-accordion">
+                        <div class="accordion-item border-0 mb-3">
+                            <h2 class="accordion-header" id="Technical-headingOne"><button
+                                    aria-controls="Technical-collapseOne" aria-expanded="true"
+                                    class="accordion-button" data-bs-target="#Technical-collapseOne"
+                                    data-bs-toggle="collapse" type="button">
+                                    <div class=" me-3">
+                                        <svg class="bi bi-question-circle-fill" fill="currentColor" height="24"
+                                            viewbox="0 0 16 16" width="24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z">
+                                            </path>
+                                        </svg>
+                                    </div>Lorem ipsum dolor sit amet adipisicing ?
+                                </button></h2>
+                            <div aria-labelledby="Technical-headingOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#Technical-accordion" id="Technical-collapseOne">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quos voluptatum at,
+                                    quibusdam blanditiis saepe soluta laborum, repellendus nemo id porro dolor eveniet
+                                    perspiciatis veritatis doloremque aliquam nam! Libero, nostrum!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3">
+                            <h2 class="accordion-header" id="Technical-headingTwo"><button
+                                    aria-controls="Technical-collapseTwo" aria-expanded="false"
+                                    class="accordion-button collapsed" data-bs-target="#Technical-collapseTwo"
+                                    data-bs-toggle="collapse" type="button">
+                                    <div class="text-muted me-3">
+                                        <svg class="bi bi-question-circle-fill" fill="currentColor" height="24"
+                                            viewbox="0 0 16 16" width="24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z">
+                                            </path>
+                                        </svg>
+                                    </div>Lorem ipsum dolor sit amet adipisicing ?
+                                </button></h2>
+                            <div aria-labelledby="Technical-headingTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#Technical-accordion" id="Technical-collapseTwo">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quos voluptatum at,
+                                    quibusdam blanditiis saepe soluta laborum, repellendus nemo id porro dolor eveniet
+                                    perspiciatis veritatis doloremque aliquam nam! Libero, nostrum!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3">
+                            <h2 class="accordion-header" id="Technical-headingThree"><button
+                                    aria-controls="Technical-collapseThree" aria-expanded="false"
+                                    class="accordion-button collapsed" data-bs-target="#Technical-collapseThree"
+                                    data-bs-toggle="collapse" type="button">
+                                    <div class="text-muted me-3">
+                                        <svg class="bi bi-question-circle-fill" fill="currentColor" height="24"
+                                            viewbox="0 0 16 16" width="24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z">
+                                            </path>
+                                        </svg>
+                                    </div>Lorem ipsum dolor sit amet adipisicing ?
+                                </button></h2>
+                            <div aria-labelledby="Technical-headingThree" class="accordion-collapse collapse"
+                                data-bs-parent="#Technical-accordion" id="Technical-collapseThree">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quos voluptatum at,
+                                    quibusdam blanditiis saepe soluta laborum, repellendus nemo id porro dolor eveniet
+                                    perspiciatis veritatis doloremque aliquam nam! Libero, nostrum!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3">
+                            <h2 class="accordion-header" id="Technical-headingFour"><button
+                                    aria-controls="Technical-collapseFour" aria-expanded="false"
+                                    class="accordion-button collapsed" data-bs-target="#Technical-collapseFour"
+                                    data-bs-toggle="collapse" type="button">
+                                    <div class="text-muted me-3">
+                                        <svg class="bi bi-question-circle-fill" fill="currentColor" height="24"
+                                            viewbox="0 0 16 16" width="24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z">
+                                            </path>
+                                        </svg>
+                                    </div>Lorem ipsum dolor sit amet adipisicing ?
+                                </button></h2>
+                            <div aria-labelledby="Technical-headingFour" class="accordion-collapse collapse"
+                                data-bs-parent="#Technical-accordion" id="Technical-collapseFour">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quos voluptatum at,
+                                    quibusdam blanditiis saepe soluta laborum, repellendus nemo id porro dolor eveniet
+                                    perspiciatis veritatis doloremque aliquam nam! Libero, nostrum!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5 faq">
+                <div class="col-md-3">
+                    <h2 class="mt-3 fw-bold">Billing</h2>
+                </div>
+                <div class="col-md-9">
+                    <div class="accordion" id="Billing-accordion">
+                        <div class="accordion-item border-0 mb-3">
+                            <h2 class="accordion-header" id="Billing-headingOne"><button
+                                    aria-controls="Billing-collapseOne" aria-expanded="false"
+                                    class="accordion-button collapsed" data-bs-target="#Billing-collapseOne"
+                                    data-bs-toggle="collapse" type="button">
+                                    <div class="text-muted me-3">
+                                        <svg class="bi bi-question-circle-fill" fill="currentColor" height="24"
+                                            viewbox="0 0 16 16" width="24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z">
+                                            </path>
+                                        </svg>
+                                    </div>Lorem ipsum dolor sit amet adipisicing ?
+                                </button></h2>
+                            <div aria-labelledby="Billing-headingOne" class="accordion-collapse collapse"
+                                data-bs-parent="#Billing-accordion" id="Billing-collapseOne">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quos voluptatum at,
+                                    quibusdam blanditiis saepe soluta laborum, repellendus nemo id porro dolor eveniet
+                                    perspiciatis veritatis doloremque aliquam nam! Libero, nostrum!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3">
+                            <h2 class="accordion-header" id="Billing-headingTwo"><button
+                                    aria-controls="Billing-collapseTwo" aria-expanded="false"
+                                    class="accordion-button collapsed" data-bs-target="#Billing-collapseTwo"
+                                    data-bs-toggle="collapse" type="button">
+                                    <div class="text-muted me-3">
+                                        <svg class="bi bi-question-circle-fill" fill="currentColor" height="24"
+                                            viewbox="0 0 16 16" width="24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z">
+                                            </path>
+                                        </svg>
+                                    </div>Lorem ipsum dolor sit amet adipisicing ?
+                                </button></h2>
+                            <div aria-labelledby="Billing-headingTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#Billing-accordion" id="Billing-collapseTwo">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quos voluptatum at,
+                                    quibusdam blanditiis saepe soluta laborum, repellendus nemo id porro dolor eveniet
+                                    perspiciatis veritatis doloremque aliquam nam! Libero, nostrum!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3">
+                            <h2 class="accordion-header" id="Billing-headingThree"><button
+                                    aria-controls="Billing-collapseThree" aria-expanded="false"
+                                    class="accordion-button collapsed" data-bs-target="#Billing-collapseThree"
+                                    data-bs-toggle="collapse" type="button">
+                                    <div class="text-muted me-3">
+                                        <svg class="bi bi-question-circle-fill" fill="currentColor" height="24"
+                                            viewbox="0 0 16 16" width="24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z">
+                                            </path>
+                                        </svg>
+                                    </div>Lorem ipsum dolor sit amet adipisicing ?
+                                </button></h2>
+                            <div aria-labelledby="Billing-headingThree" class="accordion-collapse collapse"
+                                data-bs-parent="#Billing-accordion" id="Billing-collapseThree">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quos voluptatum at,
+                                    quibusdam blanditiis saepe soluta laborum, repellendus nemo id porro dolor eveniet
+                                    perspiciatis veritatis doloremque aliquam nam! Libero, nostrum!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3">
+                            <h2 class="accordion-header" id="Billing-headingFour"><button
+                                    aria-controls="Billing-collapseFour" aria-expanded="false"
+                                    class="accordion-button collapsed" data-bs-target="#Billing-collapseFour"
+                                    data-bs-toggle="collapse" type="button">
+                                    <div class="text-muted me-3">
+                                        <svg class="bi bi-question-circle-fill" fill="currentColor" height="24"
+                                            viewbox="0 0 16 16" width="24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z">
+                                            </path>
+                                        </svg>
+                                    </div>Lorem ipsum dolor sit amet adipisicing ?
+                                </button></h2>
+                            <div aria-labelledby="Billing-headingFour" class="accordion-collapse collapse"
+                                data-bs-parent="#Billing-accordion" id="Billing-collapseFour">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quos voluptatum at,
+                                    quibusdam blanditiis saepe soluta laborum, repellendus nemo id porro dolor eveniet
+                                    perspiciatis veritatis doloremque aliquam nam! Libero, nostrum!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-end mt-5 project-call-area">
+                <div class="col-md-9 ">
+                    <div class="card card-body p-4 hover-lg">
+                        <div class="d-sm-flex d-flex justify-content-center">
+                            <div class="pe-lg-3">
+                                <h2 class="display-5 fw-semibold pb-2">Register</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, ipsa corrupti quos
+                                    id
+                                    cupiditate amet natus sapiente modi. </p><a class="btn btn-primary float-end mt-4"
+                                    href="">Sign Up</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-end mt-5 ">
+                <div class="col-md-9 ">
+                    <div class="card card-body p-4 hover-deactive-md">
+                        <div class="d-sm-flex mt-md-0 mt-4 project-call-area">
+                            <div class="pe-lg-3">
+                                <h2 class="display-5 fw-semibold pb-2">Support</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, ipsa corrupti quos
+                                    id cupiditate amet natus sapiente modi repudiandae eum ullam voluptatum</p><a
+                                    class="btn btn-primary float-end mt-4" href="">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container">
+            <section class="pb-5 my-md-5">
+                <div class="row align-items-center text-center newsletter">
+                    <div class="col-12 col-lg-auto">
+                        <h2 class="display-5 fw-bold me-5 m-0 mb-4 mb-lg-0">Subscribe Today</h2>
+                    </div>
+                    <div class="col">
+                        <div class="mx-auto">
+                            <div class="input-group">
+                                <input class="form-control" placeholder="Email address" type="text">
+                                <button class="btn btn-primary rounded-0" type="button">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="row gap-1">
+                <div class="col-md-3 row d-flex align-items-start flex-column">
+                    <h4>Kevok Community</h4>
+                    <p>Made with Kevok Community</p>
+                    <div class="social ">
+                        <a href="https://codepen.io/Juxtopposed" target="_blank" class="link"><img
+                                src="https://assets.codepen.io/9051928/codepen_1.png" alt="" /></a>
+                        <a href="https://twitter.com/juxtopposed" target="_blank" class="link"><img
+                                src="https://assets.codepen.io/9051928/x.png" alt="" /></a>
+                        <a href="https://youtube.com/@juxtopposed" target="_blank" class="link"><img
+                                src="https://assets.codepen.io/9051928/youtube_1.png" alt="" /></a>
+                    </div>
+                    <p class="mt-auto">2024 © All Rights Reserved</p>
+                </div>
+                <div class="col-md-3  card card-body">
+                    <p>About</p>
+                    <p>Our mission</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms of service</p>
+                </div>
+                <div class="col-md-3  card card-body">
+                    <p>Services</p>
+                    <p>Products</p>
+                    <p>Join our team</p>
+                    <p>Partner with us</p>
+                </div>
+            </div>
+        </div>
+        <div class="backdrop"></div>
+    </footer>
+    <a id="button"></a>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $(document).ready(function() {
+
+            $('.counter').each(function() {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 4000,
+                    easing: 'swing',
+                    step: function(now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+
+        });
+    </script>
+    <script>
+        const counters = document.querySelectorAll(".counter");
+
+        counters.forEach((counter) => {
+            counter.innerText = "0";
+            const updateCounter = () => {
+                const target = +counter.getAttribute("data-target");
+                const count = +counter.innerText;
+                const increment = target / 200;
+                if (count < target) {
+                    counter.innerText = `${Math.ceil(count + increment)}`;
+                    setTimeout(updateCounter, 1);
+                } else counter.innerText = target;
+            };
+            updateCounter();
+        });
+    </script>
+    <script>
+        var btn = $('#button');
+
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, '300');
+        });
+    </script>
+</body>
+
+</html>
